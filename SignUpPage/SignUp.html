@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הרשמה</title>
+    <link rel="stylesheet" href="SignupCSS.css">
+</head>
+<body>
+    <header>
+        <div class="top-right">
+            <img src="APPLogo.png" alt="Small Logo" class="small-logo">
+            <span class="app-name">האזרח הקטן</span>
+        </div>
+    </header>
+    <div class="center-logo">
+        <img src="LoginLogoRound.png" alt="Center Logo" class="center-logo-img">
+        <h1>הרשמה</h1>
+    </div>
+    <main>
+        <form id="signupForm">
+            <input type="email" id="email" placeholder="דוא״ל אלקטרוני" class="input-field">
+            <input type="password" id="password" placeholder="סיסמה" class="input-field">
+            <input type="text" id="firstName" placeholder="שם פרטי" class="input-field">
+            <input type="text" id="lastName" placeholder="שם משפחה" class="input-field">
+            <input type="text" id="address" placeholder="כתובת" class="input-field">
+            <input type="number" id="age" placeholder="גיל" class="input-field">
+            
+            <button type="submit" id="createAccount" class="btn">יצירת חשבון</button>
+            <button type="button" id="goBack" class="btn back-btn">חזרה</button>
+        </form>
+    </main>
+    <script src="SignupJS.js"></script>
+</body>
+</html>

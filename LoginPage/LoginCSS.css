@@ -1,0 +1,95 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E9F2FC;
+  font-family: 'Gotham Rounded', Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; /* Ensure header spans from the left edge */
+  display: flex;
+  justify-content: space-between; /* Adjust if necessary */
+  padding: 20px;
+}
+
+.logo-container img.big-logo {
+  max-width: 250px;
+  position: absolute;
+  top: 0px;
+  left: 50%; /* Center the left edge of the image to the middle of the page */
+  transform: translateX(-57%); /* Move the image back to the left by half of its width */
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns content to the end */
+  font-size: 2rem; /* Increase font size, adjust as needed */
+  font-weight: bold; /* Makes font bold */
+}
+
+.small-logo {
+  max-width: 150px;
+  margin-left: 5x; /* Adjusted to margin-left since content flows from right to left */
+  margin-right: 20px
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative; /* Add this line */
+  top: 70px; /* This will now effectively move the form down */
+}
+
+.input-button-shared-style, input[type="text"], input[type="password"], button {
+  width: 90%;
+  max-width: 350px;
+  padding: 15px 40px; /* Ensures uniform height and padding */
+  margin-bottom: 15px; /* Consistent spacing between elements */
+  font-size: 1.2rem; /* Uniform font size */
+  border-radius: 20px; /* Rounded corners for a modern look */
+  border: 2px solid #ccc; /* Consistent border styling */
+  box-sizing: border-box; /* Includes padding and border in the total dimensions */
+  display: block; /* Ensures the elements are properly block displayed */
+}
+
+button {
+  color: white; /* Text color for buttons */
+  cursor: pointer; /* Indicates a clickable button */
+  background-color: #0038B8; /* Default button color */
+  border: none; /* Removes the border for a cleaner button look */
+}
+
+#signupButton {
+  background-color: #5599FF; /* Lighter blue for differentiation */
+  margin-top: 50px; /* Increase space above the signup button */
+}
+
+
+.forgot-password-style {
+  align-self: flex-start; /* Adjusts alignment for RTL layout */
+  padding: 5px 10px; /* Smaller padding for a link-like appearance */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #000000; /* Link-like color */
+  text-decoration: underline; /* Emphasizes the link appearance */
+  border: none; /* Removes border */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer; /* Indicates a clickable link */
+  margin-right: calc(5% + 200px); /* Adjusts for alignment with the input fields */
+  width: auto; /* Adjusts width based on content */
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+
+
+
